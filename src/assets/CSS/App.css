@@ -1,0 +1,154 @@
+/* ///////////////////// Base \\\\\\\\\\\\\\\\\\\\\*/
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(no-repeat,337deg, #ff0000 0%, #a00e0e 36%, rgb(58, 23, 23) 63%, #070707 100%);
+}
+
+/* Barra de navegacion */
+.navbar {
+  background-image: linear-gradient(to right, #060606, #111b25);
+  top: 0;
+  margin-bottom: 20px;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-nav a:link,
+.navbar-nav a:visited,
+.navbar-nav a:active {
+  color: white;
+}
+.navbar-nav a:hover {
+  color: #ff0000; /* Cambiar el color de hover a rojo */
+  text-decoration: none; /* Quitar la subrayado */
+}
+
+.ancho{width: 100%;}
+
+/* ///////////////////// Aplicacion \\\\\\\\\\\\\\\\\\\\\*/
+.App {
+  height: 90%;
+    width: 80%;
+    margin: 10%;
+    border-radius: 30px;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#logo {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#logo img {
+  width: 25%;
+}
+
+#logo h2 {
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ///////////////////// Información del cuerpo \\\\\\\\\\\\\\\\\\\\\*/
+
+#cuerpo {
+  display:flex;
+  flex-direction: column;
+  color: white;
+
+}
+
+#cuerpo input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  outline:none;
+  color: white;
+  font-size:1.2rem;
+  padding: 0.4rem 0.1rem;
+}
+
+#cuerpo input::placeholder {
+  color:#ffffffc9;
+}
+
+#cuerpo span {
+  font-size:1rem;
+}
+
+.App button {
+  background-color: white;
+  border:none;
+  width: 40%;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff0000;
+  height: 2.7rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  align-items: center;
+  margin:4vh;
+  margin-left: 30%;
+
+
+}
+.App button:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.App .btn-disabled {
+  opacity: 0.5;
+  cursor: wait;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.03);
+}
+
+/* ///////////////////// MEDIA \\\\\\\\\\\\\\\\\\\\\*/
+
+@media (max-width:768px) {
+
+  #logo img{
+    width: 20%;
+  }
+  .img-logo {
+      margin-left: 150px;
+  }
+
+  .carrousel, .formulario {
+      margin-top: 20%;
+  }
+
+  table {
+      font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carrousel {
+      margin-top: 5%;
+  }
+  .formulario{
+      margin-top: 10%;
+  }
+  
+}
+
+

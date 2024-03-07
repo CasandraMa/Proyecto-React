@@ -1,0 +1,22 @@
+/* Barra de navegacion */
+.navbar {
+    background-image: linear-gradient(to right, #060606, #111b25);
+    top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-nav a:link,
+  .navbar-nav a:visited,
+  .navbar-nav a:active {
+    color: white;
+  }
+  .navbar-nav a:hover {
+    color: #ff0000; /* Cambiar el color de hover a rojo */
+    text-decoration: none; /* Quitar la subrayado */
+  }
+  
